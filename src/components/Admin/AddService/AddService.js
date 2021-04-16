@@ -30,11 +30,7 @@ const AddService = () => {
             serviceTitle :data.serviceTitle,
             serviceDescription :data.serviceDescription,
             serviceUrl : imageURL
-        }
-        // const formData = new FormData();
-        // // formData.append('imageURL', imageURL)
-        // formData.append('serviceTitle',data.serviceTitle);
-        // formData.append('serviceDescription',data.serviceDescription);      
+        }  
     
         fetch(api, {
             method: 'POST',

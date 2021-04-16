@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form';
 const MakeAdmin = () => {
     const {register, handleSubmit, errors, reset} = useForm();
     const onSubmit = data => {
-        const api = 'http://localhost:5000/addAdmin'
+        const api = 'http://localhost:5000/addToAdmin'
         fetch(api, {
             method: 'POST',
             headers: {

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { createContext, useState } from 'react';
 import './App.scss';
 import Home from './components/Home/Home';
 import {
@@ -12,9 +12,14 @@ import Admin from './components/Admin/Admin';
 import { AuthProvider } from './authentication/AuthContext';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
+export const UserContext = createContext();
 
 function App() {
+
+  const [loggedInUser, setLoggedInUser] = useState({})
+
   return (
+    <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
     <AuthProvider>
       <div className="App">
         <Router>
@@ -35,6 +40,7 @@ function App() {
         </Router>
       </div>
     </AuthProvider>
+  </UserContext.Provider>
   );
 }
 

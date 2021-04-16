@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { useForm } from 'react-hook-form';
 import { useParams } from 'react-router-dom';
-import {AuthContext, useAuth} from '../../../authentication/AuthContext';
+import {useAuth} from '../../../authentication/AuthContext';
 
 const Order = () => {
     const {register, handleSubmit, errors, reset} = useForm();
@@ -34,7 +34,7 @@ const Order = () => {
                 {errors.name && <span className="text-danger"><small>Name is required</small></span>}
                 <input type="email" name="email" placeholder="Your email address" className="form-control" defaultValue={currentUser.email} ref={register({required: true})}/>
                 {errors.email && <span className="text-danger"><small>Email is required</small></span>}
-                <input type="text" name="service" placeholder="Graphic Design" className="form-control" defaultValue={title} ref={register({required: true})}/>
+                <input type="text" name="service" placeholder="service name" className="form-control" defaultValue={title} ref={register({required: true})}/>
                 {errors.service && <span className="text-danger"><small>Service is required</small></span>}
                 <textarea name="projectDetails" placeholder="Project Details" cols="30" rows="10" className="form-control" ref={register({required: true})}></textarea>
                 {errors.projectDetails && <span className="text-danger"><small>Details is required</small></span>}
@@ -42,12 +42,6 @@ const Order = () => {
                     <div className="col">
                         <input type="number" name="price" placeholder="Price" className="form-control" ref={register({required: true})}/>
                         {errors.price && <span className="text-danger"><small>Price is required</small></span>}
-                    </div>
-                    <div className="col">
-                        <div className="custom-file">
-                        <input type="file" className="custom-file-input" name="file" id="customFile"/>
-                        <label className="custom-file-label" htmlFor="customFile">Choose file</label>
-                        </div>
                     </div>
                 </div>
                     <input type="submit" className="btn btn-primary px-4 py-2" value="Send"/>
