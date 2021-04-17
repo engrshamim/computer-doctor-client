@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Service from './Service/Service';
 
 const Services = () => {
-    const api = 'http://localhost:5000/serviceList'
+    const api = 'https://arcane-sea-25467.herokuapp.com/serviceList'
     const [services, setServices] = useState([]);
     const [loading, setLoading] = useState(true);
     useEffect(()=>{

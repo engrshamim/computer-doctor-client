@@ -15,7 +15,7 @@ const Admin = () => {
     const [isAdmin , setIsAdmin] = useState(false)
 
     useEffect(() => {
-        fetch('http://localhost:5000/addAdmin', {
+        fetch('https://arcane-sea-25467.herokuapp.com/addAdmin', {
             method: 'POST',
             headers: {'content-type': 'application/json'},
             body: JSON.stringify({email: currentUser.email})

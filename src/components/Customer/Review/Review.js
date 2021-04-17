@@ -6,7 +6,7 @@ const Review = () => {
     const {register, handleSubmit, errors, reset} = useForm();
     const currentUser = useAuth();
     const onSubmit = data => {
-        const api = 'http://localhost:5000/addReviews'
+        const api = 'https://arcane-sea-25467.herokuapp.com/addReviews'
         fetch(api, {
             method: 'POST',
             headers: {

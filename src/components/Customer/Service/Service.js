@@ -8,7 +8,7 @@ const Service = () => {
     const currentUser = useAuth();
     const email = currentUser.email;
     
-    const api = (`http://localhost:5000/orderList/${email}`)
+    const api = (`https://arcane-sea-25467.herokuapp.com/orderList/${email}`)
 
     useEffect(()=>{
 

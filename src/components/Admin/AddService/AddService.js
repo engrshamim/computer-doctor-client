@@ -6,7 +6,7 @@ const AddService = () => {
     const { register, handleSubmit, errors, reset } = useForm();
     const [imageURL, setImageURL] = useState(null)
 
-    const api = 'http://localhost:5000/addService';
+    const api = 'https://arcane-sea-25467.herokuapp.com/addService';
 
         const imageUpload = (e) => {
             console.log(e.target.files[0]);

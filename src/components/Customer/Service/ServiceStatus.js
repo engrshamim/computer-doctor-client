@@ -12,7 +12,7 @@ const ServiceStatus = (props) => {
     useEffect(()=>{
 
 
-        fetch('http://localhost:5000/serviceList')
+        fetch('https://arcane-sea-25467.herokuapp.com/serviceList')
         .then(res => res.json())
         .then(data => {
             setServiceData(data);

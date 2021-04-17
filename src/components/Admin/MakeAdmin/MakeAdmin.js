@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form';
 const MakeAdmin = () => {
     const {register, handleSubmit, errors, reset} = useForm();
     const onSubmit = data => {
-        const api = 'http://localhost:5000/addToAdmin'
+        const api = 'https://arcane-sea-25467.herokuapp.com/addToAdmin'
         fetch(api, {
             method: 'POST',
             headers: {

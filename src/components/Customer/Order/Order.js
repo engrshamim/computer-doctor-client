@@ -10,7 +10,7 @@ const Order = () => {
     const { title } = useParams();
     
     const onSubmit = data => {
-        const api = 'http://localhost:5000/addOrder';
+        const api = 'https://arcane-sea-25467.herokuapp.com/addOrder';
         fetch(api, {
             method: 'POST',
             headers: {

@@ -11,6 +11,7 @@ import Customer from './components/Customer/Customer';
 import Admin from './components/Admin/Admin';
 import { AuthProvider } from './authentication/AuthContext';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import Footer from './components/Footer/Footer';
 
 export const UserContext = createContext();
 
@@ -35,6 +36,9 @@ function App() {
             </PrivateRoute>
             <PrivateRoute path="/admin">
               <Admin></Admin>
+            </PrivateRoute>
+            <PrivateRoute path="/footer">
+              <Footer></Footer>
             </PrivateRoute>
           </Switch>
         </Router>

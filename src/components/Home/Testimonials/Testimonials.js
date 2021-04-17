@@ -3,7 +3,7 @@ import Testimonial from './Testimonial/Testimonial';
 // import { DisappearedLoading } from 'react-loadingg';
 
 const Testimonials = () => {
-    const api = 'http://localhost:5000/reviewsList'
+    const api = 'https://arcane-sea-25467.herokuapp.com/reviewsList'
     const [testimonials, setTestimonials] = useState([]);
     useEffect(()=>{
         fetch(api)

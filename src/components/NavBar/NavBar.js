@@ -28,7 +28,7 @@ const NavBar = () => {
                         <Link to="#our-team" className="nav-link text-white mr-3">Our Team</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="#contact-us" className="nav-link text-white mr-3">Contact Us</Link>
+                        <Link to="/" className="nav-link text-white mr-3">Contact Us</Link>
                     </li>
                     {
                         currentUser ? (<li className="nav-item">
