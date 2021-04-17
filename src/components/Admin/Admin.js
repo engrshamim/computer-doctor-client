@@ -26,12 +26,12 @@ const Admin = () => {
 
     return (
         <div className="container">
-            <div className="row">
+            <div >
                 <CustomerHeader></CustomerHeader>
+            { isAdmin &&  
+            <div className="row">
                 <AdminSidebar></AdminSidebar>
-            
-            
-            { isAdmin &&  <div className="col-md-9">
+            <div className="col-md-9">
                     <Switch>
                         <Route path={`${path}/make-admin`}>
                             <MakeAdmin></MakeAdmin>
@@ -43,6 +43,7 @@ const Admin = () => {
                             <ServiceList></ServiceList>
                         </Route>
                     </Switch>
+                </div>
                 </div>}
             </div>
         
