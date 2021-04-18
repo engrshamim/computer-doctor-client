@@ -4,10 +4,6 @@ const ServiceStatus = (props) => {
     const {price, service, status,projectDetails} = props.service;
     const [serviceData, setServiceData] = useState([]);
 
-    console.log(serviceData)
-
-    // const [img , setImg] = useState([]);
-    // console.log(img)
 
     useEffect(()=>{
 
@@ -32,9 +28,6 @@ const ServiceStatus = (props) => {
     return (
         <div className="col-md-4 border rounded p-3 mb-3 mr-1">
             <div className="d-flex justify-content-between align-items-center mb-3">
-                {/* {
-                   <img src={img} alt="..." width="60px"/>
-                } */}
                 <span className="badge badge-success">{status}</span>
             </div>
             <p><small className="muted">${price}</small></p>

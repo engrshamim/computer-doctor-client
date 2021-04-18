@@ -7,7 +7,8 @@ const Order = () => {
     const {register, handleSubmit, errors, reset} = useForm();
     const currentUser = useAuth();
 
-    const { title } = useParams();
+    const { title} = useParams();
+    console.log(title)
     
     const onSubmit = data => {
         const api = 'https://arcane-sea-25467.herokuapp.com/addOrder';

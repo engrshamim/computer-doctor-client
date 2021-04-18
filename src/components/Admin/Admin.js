@@ -6,6 +6,7 @@ import CustomerHeader from '../Customer/CustomerHeader/CustomerHeader';
 import AddService from './AddService/AddService';
 import AdminSidebar from './AdminSidebar/AdminSidebar';
 import MakeAdmin from './MakeAdmin/MakeAdmin';
+import ManageService from './ManageServices/ManageService';
 import ServiceList from './ServiceList/ServiceList';
 
 const Admin = () => {
@@ -39,12 +40,16 @@ const Admin = () => {
                         <Route path={`${path}/add-service`}>
                             <AddService></AddService>
                         </Route>
+                        <Route path={`${path}/manageService`}>
+                            <ManageService></ManageService>
+                        </Route>
                         <Route path={`${path}`}>
                             <ServiceList></ServiceList>
                         </Route>
                     </Switch>
                 </div>
-                </div>}
+                </div>
+                }
             </div>
         
             

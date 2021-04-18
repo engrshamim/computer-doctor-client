@@ -13,7 +13,7 @@ const Sidebar = () => {
                     <Link to={`${url}/order`}><FontAwesomeIcon icon={faShoppingCart} className="mr-2"/>Order</Link>
                 </li>
                 <li className="side--nav-item">
-                    <Link to={`${url}/services`}><FontAwesomeIcon icon={faShoppingBag} className="mr-2"/>Services</Link>
+                    <Link to={`${url}/services`}><FontAwesomeIcon icon={faShoppingBag} className="mr-2"/>My Order</Link>
                 </li>
                 <li className="side--nav-item">
                     <Link to={`${url}/reviews`}><FontAwesomeIcon icon={faCommentDots} className="mr-2"/>Reviews</Link>

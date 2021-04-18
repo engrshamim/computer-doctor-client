@@ -18,6 +18,9 @@ const AdminSidebar = () => {
                 <li className="side--nav-item">
                     <Link to={`${url}/make-admin`}><FontAwesomeIcon icon={faCrown} className="mr-2"/>Make Admin</Link>
                 </li>
+                <li className="side--nav-item">
+                    <Link to={`${url}/manageService`}><FontAwesomeIcon icon={faShoppingBag} className="mr-2"/>Manage Services</Link>
+                </li>
             </div>
         </div>
          

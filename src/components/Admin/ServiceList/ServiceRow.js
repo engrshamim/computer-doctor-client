@@ -2,16 +2,30 @@ import React from 'react';
 
 const ServiceRow = (props) => {
     const {_id,name, email,service, projectDetails, status} = props.service;
-    const setChangedStatus = props.setChangedStatus;
     
     const handleChange = (e) => {
+        const api = 'https://arcane-sea-25467.herokuapp.com/updateStatus'
         const changedValue = e.target.value;
         const newStatus = {
             _id,
+            
             changedValue: changedValue
         }
-        setChangedStatus(newStatus);
-        
+
+        console.log('id', _id)
+
+        fetch(api, {
+            headers:{ 'content-type' : 'application/json' },
+            method: 'PATCH',                                                              
+            body: JSON.stringify(newStatus)
+                                             
+          })
+          .then(res => {
+              if(res.ok){
+                  console.log(res)
+        }})
+        .catch(err => console.log(err))
+        console.log(newStatus)   
     }
     return (
         <tr>        

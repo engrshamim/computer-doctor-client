@@ -6,23 +6,23 @@ import { faFacebookF, faInstagram, faGooglePlusG } from '@fortawesome/free-brand
 
 const Footer = () => {
     const noNamed = [
-        {name: "Because we have beautiful management system, skilled engineer and you will get three months warranty after servicing. "}
+        {name: "Because we have beautiful management system, skilled doctors and you will get good service. "}
     ]
     const ourAddress = [
-        {name: "New York - 101010 Hudson" , link: "//google.com/map"},
-        {name: "Yards" , link: "//google.com/map"},
+        {name: "Gulshan, Dhaka Bangladesh" , link: "//google.com/map"},
+        {name: "Dhaka" , link: "//google.com/map"},
        
     ]
-    const ourEngr = [
-        {name: "Professional Software Engineer"},
-        {name: "Professional Hardware Engineer"},
-        {name: "24 Hour Monitoring system"}
+    const ourServiceHolder = [
+        {name: "Professional Scene Doctors"},
+        {name: "Best Automation machine"},
+        {name: "24 Hour service system"}
     ]
     const services = [
-        {name: "Software / Hardware Installation."},
-        {name: "Memory Upgrades."},
-        {name: "Windows / Operating System Installation / Upgrades."},
-        {name: "Automated Back Up."}
+        {name: "Hair Treatments."},
+        {name: "Depilatory & Waxing Treatments"},
+        {name: "Women's Hair Colour"},
+        {name: "Permanent Hair Straightening"}
     ]
     return (
         <footer className="footer-area clear-both">
@@ -30,7 +30,7 @@ const Footer = () => {
                 <div className="row py-5">
                     <FooterCol key={1} menuTitle={"Why Computer Doctor?"} menuItems={noNamed}/>
                     <FooterCol key={2} className='text-white' menuTitle="Services" menuItems={services}/>
-                    <FooterCol key={3} menuTitle="Our Engineer" menuItems={ourEngr}/>
+                    <FooterCol key={3} menuTitle="Our Service Holder" menuItems={ourServiceHolder}/>
                     <FooterCol key={4} menuTitle="Our Address" menuItems={ourAddress}> 
                         <ul className="social-media list-inline">
                             <li className="list-inline-item"><a href="//facebook.com/dignified.bd"><FontAwesomeIcon className="icon active-icon" icon={faFacebookF} /></a></li>
@@ -39,7 +39,7 @@ const Footer = () => {
                         </ul>
                         <div className="mt-5">
                             <h6>Call now</h6>
-                            <button className="btn btn-primary">+8801854-712722</button>
+                            <button className="btn btn-primary">+8801854-000000</button>
                         </div>
                     </FooterCol>
                 </div>
