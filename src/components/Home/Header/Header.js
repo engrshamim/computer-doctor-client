@@ -9,7 +9,7 @@ const Header = () => {
             <section className="container">
                 <div className="row pt-3 pb-5">
                     <div className="col-md-5 d-flex flex-column justify-content-center align-items-start order-1 order-md-0">
-                        <h1 className="font-weight-bold py-3">Welcome to</h1><h4>Your Trusted Computer servicing center.</h4><br/><br/>
+                        <h1 className="font-weight-bold py-3">Welcome to</h1><h4>Your Trusted Computer servicing center.</h4><br/>
                         <p>We want our customers to be happy and satisfied in our products and in us. So, it is our priority to provide all types of servicing to our customers.</p>
                         <button className="btn btn-primary px-4">Get an Appointment</button>
                     </div>
