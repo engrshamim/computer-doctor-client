@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Route, Switch, useRouteMatch } from 'react-router-dom';
 import { useAuth } from '../../authentication/AuthContext';
-
+import './admin.css'
 import CustomerHeader from '../Customer/CustomerHeader/CustomerHeader';
 import AddService from './AddService/AddService';
 import AdminSidebar from './AdminSidebar/AdminSidebar';
@@ -29,7 +29,7 @@ const Admin = () => {
         <div className="container">
             <div >
                 <CustomerHeader></CustomerHeader>
-            { isAdmin &&  
+            { isAdmin ?  
             <div className="row">
                 <AdminSidebar></AdminSidebar>
             <div className="col-md-9">
@@ -49,7 +49,7 @@ const Admin = () => {
                     </Switch>
                 </div>
                 </div>
-                }
+                : <h1 className="customerFeadback">Sorry to say, You are not Admin. <br/>This page only use for Admin.</h1>}
             </div>
         
             
