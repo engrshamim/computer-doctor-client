@@ -15,7 +15,7 @@ The homepage only contains a banner and some league cards each with a button cli
 
 
 ### Live Link: [Computer Doctor](https://computer-doctor.netlify.app/)
-### API Link : [The SportsDB](https://arcane-sea-25467.herokuapp.com/)
+### API Link : [Computer Doctor](https://arcane-sea-25467.herokuapp.com/)
 
 ### Create React App
 
